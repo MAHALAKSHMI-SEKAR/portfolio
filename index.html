@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper  -->
+    </head>
+ <body>
+    <!-- header section starts -->
+    <header class="header">
+        <div class="container nav-header scrolled-nav-header">
+            <a href="#"><i class="fa-solid fa-m" style="color: #ffbd00;"></i>aha.</a>
+            <nav class="nav">
+                <a href="#home" class="section active-nav" onclick="nav('home')">Home</a>
+                <a href="#about" class="section" onclick="nav('about')">About</a>
+                <a href="#services" class="section" onclick="nav('services')">Services</a>
+                <a href="#portfolio" class="section" onclick="nav('portfolio')">Portfolio</a>
+                <a href="#contact" class="section" onclick="nav('contact')">Contact</a>
+            </nav>
+            <div id="menubtn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="row1">
+            <div class="content">
+                <p>turning ideas into <br>real life <span>products</span><br>is my calling.</p>
+            </div>
+            <div class="image">
+                <img src="images/home.png" alt="Home Image">
+            </div>
+        </div>
+    </section>
+    
+    <!-- header section Ends -->
+
+    <!-- About section starts -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Mahalakshmi, Passionate web developer eager to bring creative solutions to life through code. With a strong foundation in HTML, CSS, JavaScript and React.js, I am excited to transform innovative ideas into dynamic web experiences. Seeking an entry-level position to utilize my skills and contribute to innovative web development projects.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>HTML, CSS, JavaScript and SQL</li>
+                            <li><span>Frameworks</span><br>Bootstrap, React.js</li>
+                            <li><span>Tools & Platforms</span><br>Git, GitHub ,Visual studio code</li>
+                            <li><span>Design</span><br>Responsive Design, UI/UX principles</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Higher Secondary, 92% <br>KGS Higher secondary school</li>
+                            <li><span>2024</span><br>Bachelor of Computer Applications , 8.5 CGPA<br>AVC college, Mayiladuthurai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section Ends -->
+
+    <!-- services section starts  -->
+    <section id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design & Development</h2>
+                    <p>Create visually appealing, user-friendly, and responsive websites tailored to client needs.
+                        Focus on modern design principles, usability, and accessibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cogs"></i>
+                    <h2>Front End Frameworks</h2>
+                    <p>Utilize popular frameworks and libraries to streamline development and enhance functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-alt"></i>
+                    <h2> UI/UX Design</h2>
+                    <p>Design user interfaces and experiences that are both aesthetically pleasing and functional.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magic"></i>
+                    <h2>Interactive Web Elements</h2>
+                    <p>Create engaging and interactive elements that enhance user experience and engagement.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends  -->
+
+    <!-- portfolio section starts -->
+     <section id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/w1.png" alt="">
+                    <div class="layer">
+                        <h3><i class="fa-brands fa-dyalog" style="color: #63e6be;"></i>AF</h3>
+                        <p>Developed a responsive and user-friendly 
+                            online course platform that offers wide range of courses.</p>
+                        <a href="https://mahalakshmi-sekar.github.io/Daf/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                  <div class="swiper-slide">                    
+                    <img src="images/w2.png" alt="">
+                    <div class="layer">
+                        <h3>TMovies</h3>
+                        <p>A functional Movies website with Movie listings, User Authentification and Booking features.</p>
+                        <a href=" https://mahalakshmi-sekar.github.io/Tmovies/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w3.png" alt="">
+                    <div class="layer">
+                        <h3>BUDGET</h3>
+                        <p>BUDGET helps you effortlessly track your income and expenses, set budgets, and monitor your financial health with an intuitive and user-friendly interface. Take control of your finances with ease!</p>
+                        <a href=" https://mahalakshmi-sekar.github.io/Expense_Tracker/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w4.png" alt="">
+                    <div class="layer">
+                        <h3>CLIMATE</h3>
+                        <p>CLIMATE provides real-time weather updates, forecasts, and alerts, tailored to your location. Stay informed and plan your day with accurate, easy-to-read weather data.</p>
+                        <a href="https://mahalakshmi-sekar.github.io/Climate/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+     </section>
+    <!-- portfolio section ends -->
+
+<!-- contact section starts -->
+     <section id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <a href="mailto:mahanushya3001@gmail.com"><i class="fa-solid fa-paper-plane"></i> mahanushya3001@gmail.com</a>
+                    <p><a href="tel:8489787847"><i class="fa-solid fa-square-phone"></i> Call me</a></p>
+                    <a href="images/Mahalakshmi Resume .pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+<!-- contact section ends -->
+    <div class="copyright">
+        <p>copyright@Maha. made with <i class="fas fa-heart"></i> by Mahalakshmi</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+ </body>
+ </html>
